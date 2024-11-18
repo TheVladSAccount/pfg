@@ -1,29 +1,33 @@
 <DOCTYPE! html>
    <html lang="ru">
     <head>
+        <link rel="stylesheet" href="file:///Users/vlad/Desktop/git.folder/pfg/q.css">
 
         <style>
-            #para1 {
-                text-align: center;
-            }
             footer {
                 font-family: italic;
             }
-            div {
-                background-color: rgba(100, 100, 100, 0.5);
+            body {
+                margin: 15px;
+                padding: 15px;
+                font-size: 25px;
             }
+            #theClass {
+                float: right;
+            }
+            
         </style>
     </head>
     <body>
         <span>
-        <p class="center large">параграф</p>
-        <p>ООО.МММ</p>
-         <div>
-            <p>ООО.МММ</p> 
+         <p class="center large">параграф</p>
+         <p>ООО.МММ</p>
+         <div class="qwe">
+            <p id="theClass">ООО.МММ</p> 
             <h2>ООО.ооо</h2>
          </div>
-           <p></p>
-            <p>ООО.VL
+         <p></p>
+         <p>ООО.VL
             мой <a href="mailto:327pfg@gmail.com">EMail</a></p>
         </span>
             <p>все же помнят про великий 
@@ -33,5 +37,13 @@
                    </b>
                 </span>
             </p>
+            <script>
+                function myFunction() {
+                    var x = document.getElementsByClassName("city");
+                    for (var i - 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                }
+            </script>
     </body>
    </html>
